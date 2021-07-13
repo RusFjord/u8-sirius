@@ -13,6 +13,10 @@ body {
     background-color: aliceblue;
 }
 
+.u8-container {
+    max-width: 1260px;   
+}
+
 .header-container {
     background-color: white;
     padding: 1em;
@@ -42,7 +46,7 @@ content {
     margin-top: 1em;
 }
 
-.post {
+.post, .widget {
     background-color: white;
     margin-bottom: 1.5em;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -78,4 +82,16 @@ content {
     padding: 1em;
     background-color: ghostwhite;
     margin-top: .5em;
+}
+
+.widget {
+    padding: 1.5em;
+}
+
+.widget ul {
+    list-style-type: none;
+}
+
+.widget li {
+    margin-bottom: .5em;
 }

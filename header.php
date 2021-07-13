@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
 </head>
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column">
     <div class="container-fluid header-container">     
-            <div class='container'>
+            <div class='container u8-container'>
                 <header class="d-flex flex-row justify-content-center header">
                     <div class='logo'>
                         <?php the_custom_logo(); ?>

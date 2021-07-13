@@ -6,6 +6,18 @@ function u8_sirius_setup() {
     add_theme_support( 'post-thumbnails' );
 
     set_post_thumbnail_size( 300, 300 );
+
+    register_sidebar(
+		array(
+			'name'          => 'right-sidebar',
+			'id'            => 'right-area',
+			'description'   => esc_html__( 'Вывод виджетов в правой колонке', '' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h4 class="widget-title">',
+			'after_title'   => '</h4>',
+		)
+	);
 }
 
 add_action( 'after_setup_theme', 'u8_sirius_setup' );

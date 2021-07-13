@@ -1,5 +1,5 @@
 <?php get_header();?>
-<content class="container">
+<content class="container u8-container">
     <div class="row">
         <div class="col-8">
             <?php $count = 0; ?>
@@ -35,7 +35,7 @@
             <?php endwhile; endif;?>
         </div>
         <div class="col-4">
-
+            <?php dynamic_sidebar( 'right-area' ); ?>
         </div>
     </div>
 </content>   
