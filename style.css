@@ -83,6 +83,27 @@ content {
     background-color: ghostwhite;
     margin-top: .5em;
 }
+.pagination {
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination h2 {
+    display: none;
+}
+
+.page-numbers {
+    padding: .7em;
+    background-color: maroon;
+    color: ghostwhite;
+    border-radius: 10em;
+    margin-right: .5em;
+}
+
+.pagination .current {
+    background-color: midnightblue;
+}
 
 .widget {
     padding: 1.5em;

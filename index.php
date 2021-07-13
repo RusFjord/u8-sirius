@@ -33,6 +33,19 @@
                     </div>
                 </article> 
             <?php endwhile; endif;?>
+            <?php 
+                $args = [
+
+                    'show_all'     => false,
+                    'prev_next'    => true,
+                    'prev_text'    => __('« Предыдущие'),
+                    'next_text'    => __('Следующие »'),
+                    'type'         => 'plain',
+                    'before_page_number' => '',
+                    'after_page_number'  => ''
+                ];
+                the_posts_pagination( $args );
+                ?>
         </div>
         <div class="col-4">
             <?php dynamic_sidebar( 'right-area' ); ?>
