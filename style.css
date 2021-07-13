@@ -49,13 +49,10 @@ content {
 }
 
 .post a {
-    text-decoration: none;
-    color: black;  
+    text-decoration: none; 
 }
 
-.post a:hover {
-    color: dimgray;
-}
+
 
 .post-header {
     margin-bottom: 2em;
@@ -63,11 +60,24 @@ content {
     padding: 1em;
 }
 
+.post-header h2 a {
+    color: black; 
+}
+
+.post-header h2 a:hover {
+    color: dimgray;
+}
+
+.post-image {
+    margin: auto 2em;
+}
+
 .post-content {
-    padding: 1em;
+    margin: 0 2em;
 }
 
 .post-footer {
     padding: 1em;
     background-color: ghostwhite;
+    margin-top: .5em;
 }
