@@ -44,15 +44,13 @@ content {
 
 .post {
     background-color: white;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .post a {
     text-decoration: none; 
 }
-
-
 
 .post-header {
     margin-bottom: 2em;
