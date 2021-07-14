@@ -28,8 +28,8 @@
                     </div>
                     </div>
                     <div class='d-flex flex-column post-footer'>
-                        <div class="post-categories">Категории: <?php the_category( ', ' ); ?></div>
-                        <div class='post-tags'><?php the_tags(); ?></div>
+                        <div class="post-categories"><i class="fas fa-folder"></i>Категории: <?php the_category( ', ' ); ?></div>
+                        <div class='post-tags'><i class="fas fa-tags"></i><?php the_tags(); ?></div>
                     </div>
                 </article> 
             <?php endwhile; endif;?>

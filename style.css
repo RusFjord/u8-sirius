@@ -84,6 +84,20 @@ content {
     background-color: ghostwhite;
     margin-top: .5em;
 }
+
+.post-footer .fas {
+    color: midnightblue;
+    padding-right: .2em;
+}
+
+a {
+    color: midnightblue;
+}
+
+a:hover {
+    color: maroon;
+}
+
 .pagination {
     margin-bottom: 1em;
     display: flex;
