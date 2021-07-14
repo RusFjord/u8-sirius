@@ -71,6 +71,10 @@ content {
     color: dimgray;
 }
 
+.u8-article-metadata {
+    padding-right: .5em;
+}
+
 .post-image {
     margin: auto 2em;
 }
@@ -85,7 +89,7 @@ content {
     margin-top: .5em;
 }
 
-.post-footer .fas {
+article .fas {
     color: midnightblue;
     padding-right: .2em;
 }
@@ -152,10 +156,8 @@ a:hover {
     color: ghostwhite;
 }
 
-.u8-btn-search:hover {
-    
+.u8-btn-search:hover {  
     background-color: #222222;
-    /* color: #222222; */
 }
 
 .u8-btn-search:focus, .u8-btn-search:active {

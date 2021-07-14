@@ -7,7 +7,16 @@
                 <article class="d-flex flex-column post">
                     <div class='post-header'>
                         <h2 class='text-center'><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-                        <small><b>Дата</b>: <?php the_date(); ?> <b>Автор</b>: <?php the_author_posts_link(); ?></small>
+                        <small>
+                            <span class="u8-article-metadata">
+                                <i class="fas fa-calendar-day"></i>
+                                <?php the_date(); ?>
+                            </span>
+                            <span class="u8-article-metadata">
+                                <i class="fas fa-user"></i>
+                                <?php the_author_posts_link(); ?>
+                            </span>
+                        </small>
                     </div>
                     <?php 
                         $left_right_thumbs = (($count % 2) > 0) ? 'd-flex flex-row' : 'd-flex flex-row-reverse'; 
