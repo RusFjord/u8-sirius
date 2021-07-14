@@ -11,6 +11,7 @@ body {
     padding: 0;
     font-family: 'PT Serif', serif;
     background-color: aliceblue;
+    color: #222222;
 }
 
 .u8-container {
@@ -23,7 +24,7 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'PT Sans', sans-serif;
 }
 
@@ -63,7 +64,7 @@ content {
 }
 
 .post-header h2 a {
-    color: black; 
+    color: #222222; 
 }
 
 .post-header h2 a:hover {
@@ -115,4 +116,34 @@ content {
 
 .widget li {
     margin-bottom: .5em;
+}
+
+.u8-input-search-form {
+    padding: .7em;
+    border-radius: 0;
+    border: 1px solid #666666;
+    background-color: ghostwhite;
+}
+
+.input-search-form:focus-visible {
+    outline: none;
+}
+
+.u8-input-group {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.u8-btn-search {
+    background-color: dimgray;
+    color: ghostwhite;
+}
+
+.u8-btn-search:hover {
+    
+    background-color: #222222;
+    /* color: #222222; */
+}
+
+.u8-btn-search:focus, .u8-btn-search:active {
+    box-shadow: none !important;
 }
