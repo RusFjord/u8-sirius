@@ -165,7 +165,7 @@ a:hover {
 }
 
 .u8-comments {
-    padding: 2em 1.5em 0 1.5em;
+    padding: 2em 1.5em 1.5em 1.5em;
 }
 
 .u8-comment-list {
@@ -197,4 +197,15 @@ a:hover {
 .u8-comment-header {
     background-color: aliceblue;
     padding: .5em;
+}
+
+.u8-btn-primary {
+    background-color: midnightblue;
+    color: ghostwhite;
+}
+
+.u8-btn-primary:hover {
+    background-color: maroon;
+    color: ghostwhite;
+    border-color: maroon transparent;
 }
