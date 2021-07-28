@@ -39,6 +39,30 @@
                     <div class='d-flex flex-column post-footer'>
                         <div class="post-categories"><i class="fas fa-folder"></i>Категории: <?php the_category( ', ' ); ?></div>
                         <div class='post-tags'><i class="fas fa-tags"></i><?php the_tags(); ?></div>
+                        <div class='post-comments'><i class="fas fa-comments"></i>
+                            <?php
+                                if (!is_single()) {
+                                    $num_comments = get_comments_number();
+
+                                    if ( comments_open() ) {
+                                        if ( $num_comments == 0 ) {
+                                            $comments = __('Нет комментариев');
+                                        } else {
+                                            $comments = __('Комментарии') . ' (' . $num_comments . ')';
+                                        }
+                                        echo '<a href="' . get_comments_link() .'">' . $comments . '</a>';
+                                    } else {
+                                        echo  __('Комментарии для этой записи отключены.');
+                                    }
+                                }
+                            ?>    
+                        </div>
+                    </div>
+                    <div class='u8-comments'>
+                        <?php if (is_single()) { 
+                            comments_template(); 
+                            } 
+                        ?>
                     </div>
                 </article> 
             <?php endwhile; endif;?>
