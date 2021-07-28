@@ -163,3 +163,38 @@ a:hover {
 .u8-btn-search:focus, .u8-btn-search:active {
     box-shadow: none !important;
 }
+
+.u8-comments {
+    padding: 2em 1.5em 0 1.5em;
+}
+
+.u8-comment-list {
+    list-style-type: none;
+}
+
+.u8-comment-author > img {
+    border-radius: .7em ;
+}
+
+.u8-comment-author-name {
+    padding: 0 .7em 0 .7em;
+}
+
+.u8-this-comment-author {
+    color: maroon;
+    font-weight: bold;
+    font-size: x-small;
+    border: 2px solid maroon;
+    border-radius: 1em;
+}
+
+.comment-body {
+    padding: 1em;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    margin-bottom: 1em;
+}
+
+.u8-comment-header {
+    background-color: aliceblue;
+    padding: .5em;
+}
