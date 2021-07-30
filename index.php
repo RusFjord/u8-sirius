@@ -1,7 +1,7 @@
 <?php get_header();?>
 <content class="container u8-container">
     <div class="row">
-        <div class="col-8">
+        <div class="col-lg-8 col-md-12">
             <?php $count = 0; ?>
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <article class="d-flex flex-column post">
@@ -19,7 +19,7 @@
                         </small>
                     </div>
                     <?php 
-                        $left_right_thumbs = (($count % 2) > 0) ? 'd-flex flex-row' : 'd-flex flex-row-reverse'; 
+                        $left_right_thumbs = (($count % 2) > 0) ? 'd-flex flex-row u8-mob' : 'd-flex flex-row-reverse u8-mob'; 
                         $count++;
                     ?>
                     <div class="<?php echo $left_right_thumbs ?>">
@@ -80,7 +80,7 @@
                 the_posts_pagination( $args );
                 ?>
         </div>
-        <div class="col-4">
+        <div class="col-lg-4 col-md-12">
             <?php dynamic_sidebar( 'right-area' ); ?>
         </div>
     </div>

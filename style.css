@@ -4,7 +4,7 @@ Theme URI: https://ulteam8.ru
 Description: Тема для блога ulteam8.
 Author: Ендовицкий Федор
 Author URI: https://ulteam8.ru
-Version: 1.0.1
+Version: 1.0.2
 */
 body {
     margin: 0;
@@ -208,4 +208,11 @@ a:hover {
     background-color: maroon;
     color: ghostwhite;
     border-color: maroon transparent;
+}
+
+@media screen and (max-width: 768px) {
+    .u8-mob {
+        display: flex!important;
+        flex-direction: column!important;
+    }
 }
